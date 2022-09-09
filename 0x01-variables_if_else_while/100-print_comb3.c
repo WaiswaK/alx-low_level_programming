@@ -1,13 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * main - main block
- * Description: Write a program that prints all possible
- * different combinations of two digitsNumbers must be separeted by,
- * follwed by a space 01 and 10 are considered the same
- * combination of two digits 0 and 1
- * Print only the smallest of the two digits
- * Return 0
+ * Description : prints all posible diferent combinations of 2 digits
+ * Return: 0
  */
 int main(void)
 {
