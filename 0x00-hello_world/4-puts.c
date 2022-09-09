@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-/**
- * First c program in vi editor
+/* 
  *
  *  * main - main block
  *
