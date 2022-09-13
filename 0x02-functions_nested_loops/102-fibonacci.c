@@ -10,19 +10,19 @@ int main(void)
 
 	int b = 2;
 
-	printf("%lu, ", a);
-	printf("%lu, ", b);
+	printf("%d, ", a);
+	printf("%d, ", b);
 	for (int i = 3; i <= 50; i++)
 	{
 		int n = a + b;
 
 		if (i == 50)
 		{
-			printf("%lu\n", n);
+			printf("%d\n", n);
 		}
 		else
 		{
-			printf("%lu, ", n);
+			printf("%d, ", n);
 		}
 		a = b;
 
