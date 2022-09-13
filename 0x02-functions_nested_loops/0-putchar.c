@@ -1,14 +1,21 @@
-#include <stdio.h>
+#include "main.h"
 /*
  * main - Entry point
  *
+ * Description: Finction to print
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char word = "_putchar";
+	char *sh = "_putchar";
 
-	purchar(word);
-	putchar('\n');
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
 	return (0);
 }
