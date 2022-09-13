@@ -6,27 +6,30 @@
  */
 int main(void)
 {
-	int a = 1;
+	int count = 2;
 
-	int b = 2;
+	long int i = 1, j = 2;
 
-	printf("%d, ", a);
-	printf("%d, ", b);
-	for (int i = 3; i <= 50; i++)
+	long int k;
+
+	printf("%lu, ", i);
+	while (count <= 50)
 	{
-		int n = a + b;
-
-		if (i == 50)
+		if (count == 50)
 		{
-			printf("%d\n", n);
+			printf("%lu\n", j);
 		}
 		else
 		{
-			printf("%d, ", n);
+			printf("%lu, ", j);
 		}
-		a = b;
+		k = j;
 
-		b = n;
+		j += i;
 
+		i = k;
+
+		count++;
 	}
+	return (0);
 }
