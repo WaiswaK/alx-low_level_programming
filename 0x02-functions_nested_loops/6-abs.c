@@ -7,5 +7,5 @@ nclude "main.h"
  */
 int _abs(int n)
 {
-	return (n * ((n > 0) - (n < 0)));
+	return (ab * ((ab > 0) - (ab < 0)));
 }
