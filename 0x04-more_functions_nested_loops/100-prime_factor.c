@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * main-  largest prime factor of 612852475143
  * Return: 0
@@ -12,5 +13,6 @@ int main(void)
 			n /= i;
 
 	}
+	printf("%li\n", n);
 	return (0);
 }
