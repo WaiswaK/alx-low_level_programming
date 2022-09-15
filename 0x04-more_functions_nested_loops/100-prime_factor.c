@@ -5,9 +5,11 @@
  */
 int main(void)
 {
-	unsigned int long n = 612852475143;
+	long i;
 
-	for (int i = 2; i < n; i++)
+	long n = 612852475143;
+
+	for (i = 2; i < n; i++)
 	{
 		if (n % i == 0)
 			n /= i;
