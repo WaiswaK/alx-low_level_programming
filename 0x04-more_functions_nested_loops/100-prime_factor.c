@@ -1,21 +1,16 @@
-#include <stdio.h>
-#include <math.h>
 /**
  * main-  largest prime factor of 612852475143
  * Return: 0
  */
 int main(void)
 {
-	unsigned int long n = 612852475143, a = (int) sqrt(n);
+	unsigned int long n = 612852475143;
 
-	while (1)
+	for (int i = 2; i < n; i++)
 	{
-		if (n % a == 0)
-		{
-			printf("%lu \n", n / a);
-			break;
-		}
-		a--;
+		if (n % i == 0)
+			n /= i;
+
 	}
 	return (0);
 }
