@@ -7,22 +7,34 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1, resp = 0, firstN;
+	int i;
 
-	for (firstN = 0; !(s[firstN] >= 48 && s[firstN] <= 57); firstN++)
+	int h, p;
+
+	h = 0;
+
+	p = -1;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[firstN] == '-')
+		if (s[i] == '-')
+			p *= -1;
+
+		if (s[i] > 47 && s[i] < 58)
 		{
-			sign *= -1;
+			if (h < 0)
+				h = (h * 10) - (s[i] - '0');
+
+			else
+				h = (s[i] - '0') * -1;
+
+			if (s[i + 1] < 48 || s[i + 1] > 57)
+				break;
 
 		}
 	}
-	for (int i = firstN; s[i] >= 48 && s[i] <= 57; i++)
-	{
-		resp *= 10;
+	if (p < 0)
+		h *= -1;
 
-		resp += (s[i] - 48);
-
-	}
-	return (sign * resp);
+	return (h);
 }
