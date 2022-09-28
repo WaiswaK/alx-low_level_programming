@@ -30,7 +30,7 @@ int is_prime_number(int num)
 {
 	int iterator;
 
-	inerator = 2;
+	iterator = 2;
 
 	if (num < 2)
 	{
